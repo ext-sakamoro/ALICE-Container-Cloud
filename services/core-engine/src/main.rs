@@ -1,7 +1,9 @@
+#![allow(dead_code)] // SaaS template: WIP request struct field 未使用、将来 handler で使う
+
 use axum::{
     extract::State,
     response::Json,
-    routing::{delete, get, post},
+    routing::{get, post},
     Router,
 };
 use serde::{Deserialize, Serialize};
@@ -212,7 +214,7 @@ async fn deploy(
         region: region.clone(),
         endpoint: format!(
             "https://{}.container.alicelaw.net",
-            req.image.split('/').last().unwrap_or("app")
+            req.image.split('/').next_back().unwrap_or("app")
         ),
         auto_scale,
         status: "deploying".into(),
