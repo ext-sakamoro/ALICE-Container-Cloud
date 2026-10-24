@@ -82,6 +82,6 @@ curl -X POST http://localhost:8081/api/v1/container/deploy \
 
 ## License
 
-AGPL-3.0-or-later. See [LICENSE](./LICENSE).
+`LicenseRef-Proprietary`. The text is [LICENSE-Proprietary](LICENSE-Proprietary).
 
-Part of [Project A.L.I.C.E.](https://github.com/ext-sakamoro)
+Enquiries: https://extoria.co.jp/
