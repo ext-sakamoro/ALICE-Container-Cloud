@@ -97,7 +97,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-800 py-6 text-center text-gray-600 text-sm">
-        ALICE-Container-Cloud — Project A.L.I.C.E. &mdash; AGPL-3.0-or-later
+        ALICE-Container-Cloud — Project A.L.I.C.E. &mdash; LicenseRef-Proprietary
       </footer>
     </div>
   );
